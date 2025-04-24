@@ -14,8 +14,8 @@ body {
 }
 
 .model-viewer {
-  width: 80%; /* Ajuste a largura conforme necessário */
-  height: 600px; /* Ajuste a altura conforme necessário */
+  width: 80%; 
+  height: 600px; 
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -79,12 +79,16 @@ section .list .item {
   justify-content: center;
   transition: opacity 0.5s, transform 0.5s;
 }
-
-
 section .list .item:not(.active) {
   opacity: 0;
   transform: translateY(40%);
   transition-delay: 0.3s;
+}
+section .list .item.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0%);
+  z-index: 1;
 }
 
 @keyframes girar-eixo-Y {
@@ -129,7 +133,7 @@ section .list .item:not(.active) {
   font-size: 14px;
   color: #ffffff;
 }
-.content .informacao{
+.content .ver-mais{
   border-radius: 30px;
   height: 35px;
   width: 120px;

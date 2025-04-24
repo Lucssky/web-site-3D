@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="icon" type="image/png" href="favicon2.png">
@@ -30,8 +30,15 @@
   <div class="list">
     <div class="item active">
       <div class="car-imagem">
-        <img src="camisa.png" alt="car">
-    </div>
+        <model-viewer
+          src="camiseta.glb"
+          alt="Camisa Crow 3D"
+          auto-rotate
+          camera-controls
+          disable-zoom
+          style="width: 300px; height: 300px;"
+        ></model-viewer>
+      </div>
       <div class="content">
         <p class="informcaodocarro">
           Estampa exclusiva
@@ -48,9 +55,14 @@
       </div>
     </div>
     <div class="item">
-      <div class="car-imagem">
-        <img src="camisastreet.png" alt="car">
-      </div>
+      <model-viewer
+        src="camiseta.glb"
+        alt="Camisa Crow 3D"
+        auto-rotate
+        camera-controls
+        disable-zoom
+        style="width: 300px; height: 300px;"
+      ></model-viewer>
       <div class="content">
         <p class="informcaodocarro">
           Estampa exclusiva
@@ -67,9 +79,14 @@
       </div>
     </div>
     <div class="item">
-      <div class="car-imagem">
-        <img src="camisa%20bulldog.png" alt="car">
-      </div>
+      <model-viewer
+        src="camiseta.glb"
+        alt="Camisa Crow 3D"
+        auto-rotate
+        camera-controls
+        disable-zoom
+        style="width: 300px; height: 300px;"
+      ></model-viewer>
       <div class="content">
         <p class="informcaodocarro">
           Estampa exclusiva
@@ -85,15 +102,6 @@
         </button>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <model-viewer
-      src="camiseta.glb"
-      alt="Um modelo 3D"
-      auto-rotate
-      camera-controls
-      interaction-prompt="true"
-    ></model-viewer>
   </div>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
 

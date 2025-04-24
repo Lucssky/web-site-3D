@@ -11,11 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => item.classList.remove('active'));
     dots.forEach(dot => dot.classList.remove('ativo'));
 
+
     items[active].classList.add('active');
     dots[active].classList.add('ativo');
   }
 
   setSlider();
+
   let verMaisButtons = container.querySelectorAll('.ver-mais');
   verMaisButtons.forEach(button => {
     button.addEventListener('click', () => {
